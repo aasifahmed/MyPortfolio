@@ -71,8 +71,8 @@
   }
   
   .about {
-    background-color: #f4f4f4;
-    padding: 50px 0;
+    background-color: #f9f9f9;
+    padding: 30px 0;
   }
   
   
@@ -97,7 +97,7 @@
   }
   
   .project img {
-    width: 100%;
+    width: 50%;
     max-width: 300px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -113,7 +113,7 @@
   }
   
   .contact {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #f9f9f9;
     text-align: center;
   }
@@ -192,7 +192,7 @@
   }
 
 .gallery {
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #f4f4f4;
     text-align: center;
   }
@@ -205,6 +205,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .img {
+    padding-bottom: 16px;
   }
   
   .image-container {
