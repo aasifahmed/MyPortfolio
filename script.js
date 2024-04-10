@@ -1,15 +1,27 @@
-let visitorCount = localStorage.getItem('visitorCount');
-
-// If visitor count is not present in local storage, set it to 0
-if (!visitorCount) {
-  visitorCount = 0;
+function openModal(imageSrc) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = imageSrc;
 }
 
-// Increment visitor count
-visitorCount++;
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
 
-// Update the visitor count in the HTML
-document.getElementById('visitorCount').textContent = visitorCount;
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
-// Store the updated visitor count in local storage
-localStorage.setItem('visitorCount', visitorCount);
+document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+
+});
